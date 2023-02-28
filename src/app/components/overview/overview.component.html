@@ -1,0 +1,19 @@
+<app-stock-table [tableHeaders]="headerList" [tableData]="baseAmount"  ></app-stock-table>
+
+<div class="card mt-5">
+<app-transactions></app-transactions>
+</div>
+
+<div class="container">
+    <form (ngSubmit)="onSubmit(simpleForm)" [formGroup]="simpleForm">
+        <div class="form-group">
+            <label for="nameInput">
+                Enter name
+            <input id="nameInput" class="form-control" name="name"/>
+        </label>
+        </div>
+        <button type="submit" class="bn btn-info">Submit</button>
+    </form>
+
+
+</div>
